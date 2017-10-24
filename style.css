@@ -1,0 +1,61 @@
+@font-face {
+   font-family: 'Gingham';
+   src: url('./Gingham.woff2') format('woff2'),
+   url('./Gingham.woff') format('woff'),
+   url('./Gingham.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+ }
+
+@keyframes fat {
+ from {font-variation-settings: "wght" 0, "wdth" 0;}
+ to {font-variation-settings: "wght" 700, "wdth" 150;}
+}
+
+
+body{
+  font-family:'Gingham',sans;
+  font-size:24px;
+  line-height:1.4em;
+  margin:0 2em;
+  background-color:rgba(255,255,255,1);
+  color:rgba(0,0,0,1);
+  font-feature-settings: "kern" on;
+  -moz-font-feature-settings: "kern" on;
+  -webkit-font-feature-settings: "kern" on;
+  -ms-font-feature-settings: "kern" on;
+  -o-font-feature-settings: "kern" on;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: whitesmoke;
+}
+
+h1{
+  text-transform: uppercase;
+}
+
+.letter{
+  font-variation-settings: "wght" 100, "wdth" 100;
+  transition: font-variation-settings 800ms ease-in;
+}
+
+
+h1:hover .m, h1:hover .r{
+  font-variation-settings: "wght" 300,  "wdth" 100;
+}
+
+h1:hover .i, h1:hover .e{
+  font-variation-settings: "wght" 500,  "wdth" 100;
+}
+
+h1:hover .n, h1:hover .d, h1:hover .t{
+  font-variation-settings: "wght" 700,  "wdth" 100;
+}
+
+h1:hover .h, h1:hover .u, h1:hover .n{
+  font-variation-settings: "wght" 900,  "wdth" 100;
+}
