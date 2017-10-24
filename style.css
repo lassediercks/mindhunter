@@ -12,6 +12,12 @@
  to {font-variation-settings: "wght" 700, "wdth" 150;}
 }
 
+.top{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+}
 
 body{
   font-family:'Gingham',sans;
