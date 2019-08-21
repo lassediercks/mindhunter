@@ -1,31 +1,35 @@
 @font-face {
-   font-family: 'Gingham';
-   src: url('./Gingham.woff2') format('woff2'),
-   url('./Gingham.woff') format('woff'),
-   url('./Gingham.ttf') format('truetype');
-   font-weight: normal;
-   font-style: normal;
- }
-
-@keyframes fat {
- from {font-variation-settings: "wght" 0, "wdth" 0;}
- to {font-variation-settings: "wght" 700, "wdth" 150;}
+  font-family: "Gingham";
+  src: url("./Gingham.woff2") format("woff2"),
+    url("./Gingham.woff") format("woff"),
+    url("./Gingham.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-.top{
+@keyframes fat {
+  from {
+    font-variation-settings: "wght" 0, "wdth" 0;
+  }
+  to {
+    font-variation-settings: "wght" 700, "wdth" 150;
+  }
+}
+
+.top {
   position: fixed;
   top: 0;
   width: 100%;
   text-align: center;
 }
 
-body{
-  font-family:'Gingham',sans;
-  font-size:24px;
-  line-height:1.4em;
-  margin:0 2em;
-  background-color:rgba(255,255,255,1);
-  color:rgba(0,0,0,1);
+body {
+  font-family: "Gingham", sans;
+  font-size: 24px;
+  line-height: 1.4em;
+  margin: 0 2em;
+  background-color: rgba(255, 255, 255, 1);
+  color: white;
   font-feature-settings: "kern" on;
   -moz-font-feature-settings: "kern" on;
   -webkit-font-feature-settings: "kern" on;
@@ -40,31 +44,42 @@ body{
   flex-direction: column;
   justify-content: space-around;
 
-  background: whitesmoke;
+  background: black;
 }
 
-h1{
+h1 {
   text-transform: uppercase;
+  transition: letter-spacing 1500ms ease-in-out;
+}
+h1:hover {
+  letter-spacing: 5px;
 }
 
-.letter{
+.letter {
   font-variation-settings: "wght" 100, "wdth" 100;
-  transition: font-variation-settings 800ms ease-in;
+  transition: font-variation-settings 1500ms ease-in;
+}
+.letter:hover {
 }
 
-
-h1:hover .m, h1:hover .r{
-  font-variation-settings: "wght" 300,  "wdth" 100;
+h1:hover .m,
+h1:hover .r {
+  font-variation-settings: "wght" 300, "wdth" 100;
 }
 
-h1:hover .i, h1:hover .e{
-  font-variation-settings: "wght" 500,  "wdth" 100;
+h1:hover .i,
+h1:hover .e {
+  font-variation-settings: "wght" 500, "wdth" 100;
 }
 
-h1:hover .n, h1:hover .d, h1:hover .t{
-  font-variation-settings: "wght" 700,  "wdth" 100;
+h1:hover .n,
+h1:hover .d,
+h1:hover .t {
+  font-variation-settings: "wght" 700, "wdth" 100;
 }
 
-h1:hover .h, h1:hover .u, h1:hover .n{
-  font-variation-settings: "wght" 900,  "wdth" 100;
+h1:hover .h,
+h1:hover .u,
+h1:hover .n {
+  font-variation-settings: "wght" 900, "wdth" 100;
 }
